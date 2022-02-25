@@ -7,5 +7,5 @@ Git
 3. git status => Me muestra es estado el proyecto.
 4. git add . => Adiciona todos los cambios.
 5. git status => Me muestra el estado del proyecto.
-6. git commit -m "Descripción clara y corta de la tarea que resolvimos.
+6. git commit -m "Descripción clara y corta de la tarea que resolvimos".
 7. git push origin main.
