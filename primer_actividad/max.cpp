@@ -2,7 +2,7 @@
 
 using namespace std;
 
-/** 7)Escribir un programa que dados dos enteros a y b retornr el máximo común divisor entre ellos, 
+/** 7)Escribir un programa que dados dos enteros a y b retornar el máximo común divisor entre ellos, 
       Algoritmo de euclides **/
  
 int max_c_d(int a, int b){
