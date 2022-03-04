@@ -15,9 +15,4 @@ bool perfect(int a){
         return false;
 }
 
-int main(){
-    int a = perfect(6);
-    cout << a << endl;
-}
-
 /*hacer una funcion que nos calcule los n numeros perfectos*/
