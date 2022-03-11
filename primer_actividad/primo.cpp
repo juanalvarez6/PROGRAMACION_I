@@ -41,6 +41,7 @@ bool esPrimo(int x) {
     }
   }
 }
+
 int main() {
   for (int i=0; i < 100; i++) {
     bool p = esPrimo(i);
@@ -50,4 +51,3 @@ int main() {
   }
   return 0;
 }
-    

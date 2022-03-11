@@ -43,15 +43,24 @@ bool esPrimo(int x) {
   }
 }
 
-int main(){
-  vector <int> a;
-  for (int i=1; i<45; i++){
-    bool p = esPrimo(i);
-    if (p == 1){
-      a.push_back(i);
+vector <int> primerosprimos(int n){
+    vector<int> r;
+    for (int i=0; r.size() < n; i++){
+        if (esPrimo(i)){
+            r.push_back(i);
+        }
     }
+    return r;
+}
+
+void print(vector<int> x){
+  for (int i=0; i<x.size();i++){
+    cout << " " << x[i];
   }
-   for (int i=0; i<a.size();i++){
-      cout << a[i] << endl;
-  }
+  cout << endl;
+}
+
+int main(){
+    vector<int> w = primerosprimos(15);
+    print(w);
 }
