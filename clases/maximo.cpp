@@ -18,6 +18,5 @@ int maximo(int a, int b, int c) {
 }
 
 int main () {
-	int a = maximo(3, 5, 4);
-	cout << a << endl;
+	cout << maximo(3, 5, 4) << endl;
 }

@@ -13,6 +13,5 @@ int vec_suma(vector <int> x){
 }
 
 int main () {
-	int a = vec_suma({1, 2, 3, 4});
-	cout << a;
+	cout << vec_suma({1, 2, 3, 4}) << endl;
 }

@@ -59,6 +59,5 @@ string mes(int x){
 }
 
 int main(){
-    string a = mes(1);
-    cout << a << endl;
+    cout << mes(1) << endl;
 }

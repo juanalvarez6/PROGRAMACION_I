@@ -24,6 +24,5 @@ int esvocal(char a){
 }
 
 int main () {
-	int a = esvocal('a');
-	cout << a << endl;
+	cout << esvocal('a') << endl;
 }

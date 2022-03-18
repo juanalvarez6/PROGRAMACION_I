@@ -14,6 +14,5 @@ float area(float a, float b, float c) {
 }
 
 int main () {
-	float a = area(4, 5, 7);
-	cout << a << endl;
+	cout << area(4, 5, 7) << endl;
 }

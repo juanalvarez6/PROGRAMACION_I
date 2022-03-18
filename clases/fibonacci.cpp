@@ -17,6 +17,5 @@ int fib(int n) {
 }
 
 int main () {
-	int a = fib(2);
-	cout << a << endl;
+	cout << fib(2) << endl;
 }

@@ -11,7 +11,6 @@ bool espar(int a) {
 }
 
 int main () {
-	int a = espar(53);
-	cout << a << endl;
+	cout << espar(53) << endl;
 }
 

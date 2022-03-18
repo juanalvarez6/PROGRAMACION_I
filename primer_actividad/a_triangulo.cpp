@@ -10,6 +10,5 @@ float area(float a, float b) {
 }
 
 int main () {
-	float a = area(0, 0);
-	cout << a << endl;
+	cout << area(0, 0) << endl;
 }

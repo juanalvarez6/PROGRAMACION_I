@@ -26,6 +26,5 @@ int cuadrante(int x, int y) {
 }
 
 int main () {
-	int a = cuadrante(95, 32);
-	cout << a << endl;
+	cout << cuadrante(95, 32) << endl;
 }

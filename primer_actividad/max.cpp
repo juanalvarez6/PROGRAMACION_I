@@ -19,6 +19,5 @@ int max_c_d(int a, int b){
 }
 
 int main(){
-    int x = max_c_d(34, 45);
-    cout << x << endl;
+    cout << max_c_d(34, 45) << endl;
 }

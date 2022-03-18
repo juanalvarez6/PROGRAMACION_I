@@ -30,6 +30,5 @@ vector <char> vocales(string x){
 }
 
 int main(){
-    vector <char> a = vocales("Juan Manuel");
-    print(a);
+    print(vocales("Juan Manuel"));
 }

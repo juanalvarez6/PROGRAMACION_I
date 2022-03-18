@@ -24,6 +24,5 @@ int edad(int a) {
 }
 
 int main () {
-	int a = edad(87);
-	cout << a << endl;
+	cout << edad(87) << endl;
 }

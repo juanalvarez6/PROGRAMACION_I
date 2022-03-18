@@ -11,7 +11,6 @@ int fact(int n) {
 }
 
 int main () {
-	int a = fact(3);
-	cout << a << endl;
+	cout << fact(3) << endl;
 }
 

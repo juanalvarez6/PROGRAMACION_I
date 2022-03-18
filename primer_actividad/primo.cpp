@@ -44,9 +44,8 @@ bool esPrimo(int x) {
 
 int main() {
   for (int i=0; i < 100; i++) {
-    bool p = esPrimo(i);
-    if (p) {
-      cout << "Primo " << i << "?: " <<  p << endl;
+    if (esPrimo(i)) {
+      cout << "Primo " << i << "?: " <<  esPrimo(i) << endl;
     }
   }
   return 0;

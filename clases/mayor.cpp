@@ -16,6 +16,5 @@ int maximo(vector<int> z){
 }
 
 int main () {
-	int a = maximo({1,2,3,4});
-	cout << a;
+	cout << maximo({1,2,3,4}) << endl;
 }

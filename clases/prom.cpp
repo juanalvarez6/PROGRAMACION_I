@@ -14,7 +14,5 @@ double vec_prom(vector <double> x){
 }
 
 int main () {
-    vector <double> x {3.5, 3.4, 3.5, 5, 4};
-	double a = vec_prom(x);
-	cout << a;
+	cout << vec_prom({3.5, 3.4, 3.5, 5, 4}) << endl;
 }

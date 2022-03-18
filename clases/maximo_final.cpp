@@ -10,6 +10,5 @@ int max2(int a, int b) {
 }
 
 int max3(int a, int b) {
-    int m = max2(max2(3,5), 4);
-    return m;
+    return max2(max2(3,5), 4);
 }
