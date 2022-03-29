@@ -1,5 +1,4 @@
 #include <iostream>
-#include <stdio.h>
 #include <math.h>
 
 using namespace std;
@@ -27,5 +26,6 @@ int intercambiodigitos(int num){
 }
 
 int main(){
-    cout << intercambiodigitos(3245);
+    cout << "Numero despues de intercambiar el primer y el ultimo digito => " 
+    << intercambiodigitos(7689) << endl;
 }
