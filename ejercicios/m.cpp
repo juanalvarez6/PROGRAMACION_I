@@ -6,26 +6,36 @@ using namespace std;
 // 13) Escriba un programa en C para ingresar un número del usuario e intercambiar el 
 // primer y último dígito del número dado
 
-int intercambiodigitos(int num){
-    int swappedNum;
-    int firstDigit, lastDigit, digits;
+int primero(int x){
+    for (x; x >= 10;){
+        x = x / 10;
+    }
+    return x;
+}
 
-    lastDigit = num % 10;
+int ultimo(int x){
+    return x % 10;
+}
 
-    digits = (int)log10(num); 
+int swappedNum(int num){
+    int swp, digits;
 
-    firstDigit = (int)(num / pow(10, digits)); 
+    digits = (int) log10(num); //la cantidad de digitos -1
+    cout << digits << endl;
+    swp  = ultimo(num);
+    cout << swp << endl;
+    swp *= (int) pow(10, digits);
+    cout << swp << endl;
+    swp += num % ((int) pow(10, digits));
+    cout << swp << endl;
+    swp -= ultimo(num);
+    cout << swp << endl;
+    swp += primero(num);
 
-    swappedNum  = lastDigit;
-    swappedNum *= (int) pow(10, digits);
-    swappedNum += num % ((int) pow(10, digits));
-    swappedNum -= lastDigit;
-    swappedNum += firstDigit;
-
-    return swappedNum;
+    return swp;
 }
 
 int main(){
-    cout << "Numero despues de intercambiar el primer y el ultimo digito => " 
-    << intercambiodigitos(7689) << endl;
+    cout << /* "Numero despues de intercambiar el primer y el ultimo digito es => "
+    << */ swappedNum(1345) << endl;
 }

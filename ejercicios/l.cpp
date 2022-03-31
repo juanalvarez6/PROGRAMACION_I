@@ -2,8 +2,19 @@
 
 using namespace std;
 
-// 12) Escriba un programa en C para ingresar un número y encuentre la suma del primer y último 
+// 14) Escriba un programa en C para ingresar un número y encuentre la suma del primer y último 
 // dígito del número usando el ciclo for
+
+int firstdigit(int x){
+    for (x; x >= 10;){
+        x = x / 10;
+    }
+    return x;
+}
+
+int lastdigit(int x){
+    return x % 10;
+}
 
 int sumfirstlastdigit(int x){
     int l = x % 10;
@@ -13,6 +24,15 @@ int sumfirstlastdigit(int x){
     return l + x;
 }
 
+int sumdigits(int num){
+    int res = lastdigit(num);
+    for (num; num > 0;){
+        num /= 10;
+        res += lastdigit(num);
+    }
+    return res;
+}
+
 int main(){
-    cout << sumfirstlastdigit(3);
+    cout << sumdigits(2351);
 }
