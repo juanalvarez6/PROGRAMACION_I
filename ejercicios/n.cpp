@@ -16,19 +16,11 @@ int lastdigit(int x){
     return x % 10;
 }
 
-int sumfirstlastdigit(int x){
-    int l = x % 10;
-    for ( x; x >= 10;){
-        x /= 10;
-    }
-    return l + x;
-}
-
 int sumdigits(int num){
-    int res = lastdigit(num);
+    int res = 0;
     for (num; num > 0;){
-        num /= 10;
         res += lastdigit(num);
+        num /= 10;
     }
     return res;
 }
