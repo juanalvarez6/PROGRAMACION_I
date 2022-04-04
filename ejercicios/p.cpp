@@ -35,8 +35,7 @@ vector <int> digitos(double num) {
     return res;
 }
 
-int main()
-{
+int main(){
     vector <int> v = digitos(2035);
     vector <int> w = invertir(v);
     imprimir(w);
