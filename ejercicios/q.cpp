@@ -38,5 +38,5 @@ bool palindromo(int a){
 }
 
 int main(){
-    cout << palindromo(344);
+    cout << palindromo(343);
 }
