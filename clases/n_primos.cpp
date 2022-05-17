@@ -21,26 +21,14 @@ bool esPar(int a) {
   }
 }
 
-bool esPrimo(int x) {
-  if (x <= 1) {
-    return false;
-  } else {
-    if (esPar(x)) {
-      if(x == 2) {
-        return true;
-      } else { // x es par diferente de 2 y por lo tanto no es primo
-        return false;
-      }
-    } else { // x es impar
-      for(int i = 3; i < x; i++) {
-        if (esDivisor(x,i)) {
-          return false;
-        }
-      }
-      // no encontramos un i que fuera divisor de x
-      return true;
+bool esPrimo(int x){
+    if(x<2) return false;
+    bool res=true;
+    for(int i=2; i<x; i++){
+        if(x % i == 0) res = false;
     }
-  }
+    if(res == true) return true;
+    else return false;
 }
 
 int main(){
