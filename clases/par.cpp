@@ -3,11 +3,8 @@
 using namespace std;
 
 bool espar(int a) {
-    if (a % 2 == 0) {
-        return true;
-    } else {
-        return false;
-    }
+    if (a % 2 == 0) return true;
+    else return false;
 }
 
 int main () {

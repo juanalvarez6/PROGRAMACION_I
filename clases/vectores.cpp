@@ -13,8 +13,8 @@ int main(){
 
     for( int i = 0; i < v.size(); i++){
         cout << v[i] << endl; 
-        // 0| 1| 2| 3 Tamaño del vectores
-        // 1| 2| 3| 4 v.size()
+        // 0| 1| 2| 3 Indice del vector
+        // 1| 2| 3| 4 v.size() tamaño del vector
         //42|54|45|43  Elementos del vector
     }
 }

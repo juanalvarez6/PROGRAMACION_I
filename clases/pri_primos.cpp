@@ -18,9 +18,8 @@ bool esPar(int a) {
 bool esPrimo(int x){
   if(x<2) return false;
   bool res=true;
-  for(int i=2; i<x; i++){
+  for(int i=2; i<x; i++)
     if(x % i == 0) res = false;
-  }
   if(res == true) return true;
   else return false;
 }
@@ -41,10 +40,10 @@ bool esPrimov2(int x) {
 }
 
 vector <int> primerosprimos(int n){
-    vector<int> r;
-    for (int i=0; r.size() < n; i++)
-      if (esPrimo(i)) r.push_back(i);
-    return r;
+  vector<int> r;
+  for (int i=0; r.size() < n; i++)
+    if (esPrimo(i)) r.push_back(i);
+  return r;
 }
 
 void print(vector<int> x){
@@ -55,6 +54,6 @@ void print(vector<int> x){
 }
 
 int main(){
-    vector<int> w = primerosprimos(15);
-    print(w);
+  vector<int> w = primerosprimos(15);
+  print(w);
 }

@@ -7,9 +7,7 @@ using namespace std;
 
 double vec_prom(vector <double> x){
     double suma = 0;
-    for (int i=0; i < x.size();i++){
-        suma += x[i];
-    } 
+    for (int i=0; i < x.size();i++) suma += x[i];
     return suma / x.size();
 }
 

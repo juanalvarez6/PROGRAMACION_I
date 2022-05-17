@@ -4,10 +4,8 @@
 using namespace std;
 
 bool pertenece(int a, vector<int> bp){
-    for(int q = 0; q < bp.size(); q++){
-        if(bp[q] == a)
-            return true;
-    }
+    for(int q = 0; q < bp.size(); q++)
+        if(bp[q] == a) return true;
     return false;
 }
 

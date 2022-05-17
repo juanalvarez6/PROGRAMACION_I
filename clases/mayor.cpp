@@ -7,11 +7,8 @@ using namespace std;
 
 int maximo(vector<int> z){
     int mayor = z[0];
-    for (int a = 1; a < z.size(); a++){
-        if (z[a] > mayor){   
-            mayor = z[a];
-        }
-    }
+    for (int a = 1; a < z.size(); a++)
+        if (z[a] > mayor) mayor = z[a];
     return mayor;
 }
 

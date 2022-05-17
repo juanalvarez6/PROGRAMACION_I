@@ -7,8 +7,7 @@ using namespace std;
 
 int vec_suma(vector <int> x){
     int suma = 0;
-    for (int i=0; i < x.size();i++)
-        suma += x[i];
+    for (int i=0; i < x.size();i++) suma += x[i];
     return suma;
 }
 
